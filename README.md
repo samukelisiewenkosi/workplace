@@ -109,7 +109,7 @@ y_pred = model.predict(X_test)
 print("Mean Squared Error:", mean_squared_error(y_test, y_pred))
 
 4. Model Evaluation
-Evaluate the performance of the model using metrics such as Mean Squared Error (MSE), R-squared, and Mean Absolute Error (MAE).
+Evaluate the performance of the model using metrics such as Mean Squared Error (MSE), R-squared.
 
 5. Visualizations
 Use matplotlib and seaborn for visualizations such as:
