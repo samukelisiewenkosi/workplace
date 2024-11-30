@@ -35,6 +35,7 @@ The key challenges include:
 
 Handling missing data and outliers in the dataset.
 Feature engineering for categorical variables such as job title, industry, and location.
+Training models and evaluation
 Tuning machine learning models to improve prediction accuracy.
 Interpreting complex relationships between automation, AI, and workforce trends.
 Installation
@@ -66,11 +67,11 @@ You can load the dataset using the following code:
 python
 import pandas as pd
 
-# Load the dataset
+### Load the dataset
 file_path = 'ai_job_market_insights.csv'  
 df = pd.read_csv(file_path)
 
-# Check the first few rows of the data
+### Check the first few rows of the data
 print(df.head())
 2. Data Preprocessing
 Before applying machine learning models, you should preprocess the data by:
@@ -86,25 +87,25 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
-# Preprocess data (encoding, scaling, etc.)
-# Example: Drop the target column and encode categorical features
+### Preprocess data (encoding, scaling, etc.)
+### Example: Drop the target column and encode categorical features
 X = df.drop(columns=['Salary_USD'])
 y = df['Salary_USD']
 
-# One-hot encoding of categorical columns
+### One-hot encoding of categorical columns
 X = pd.get_dummies(X, drop_first=True)
 
-# Split data into training and test sets
+### Split data into training and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# Initialize and train the model
+### Initialize and train the model
 model = LinearRegression()
 model.fit(X_train, y_train)
 
 # Make predictions
 y_pred = model.predict(X_test)
 
-# Evaluate the model
+### Evaluate the model
 print("Mean Squared Error:", mean_squared_error(y_test, y_pred))
 
 4. Model Evaluation
@@ -119,7 +120,7 @@ python
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Visualize the correlation matrix
+### Visualize the correlation matrix
 corr_matrix = df.corr()
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
 plt.show()
