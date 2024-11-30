@@ -88,7 +88,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 ### Preprocess data (encoding, scaling, etc.)
-### Example: Drop the target column and encode categorical features
+#### Example: Drop the target column and encode categorical features
 X = df.drop(columns=['Salary_USD'])
 y = df['Salary_USD']
 
