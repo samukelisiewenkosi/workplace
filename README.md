@@ -77,7 +77,7 @@ print(df.head())
 Before applying machine learning models, you should preprocess the data by:
 
 Handling missing values.
-Converting categorical variables into numerical values (e.g., using one-hot encoding).
+Converting categorical variables into numerical values ( using one-hot encoding).
 Scaling features if necessary.
 3. Building Machine Learning Models
 You can train models to predict salaries and job growth projections. Here's an example of using Linear Regression for salary prediction:
@@ -87,7 +87,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
-### Preprocess data (encoding, scaling, etc.)
+### Preprocess data (encoding, scaling, )
 #### Example: Drop the target column and encode categorical features
 X = df.drop(columns=['Salary_USD'])
 y = df['Salary_USD']
