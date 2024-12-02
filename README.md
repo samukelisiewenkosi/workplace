@@ -16,9 +16,9 @@ The dataset used in this project contains the following columns:
 
 Job_Title: The title of the job.
 Industry: The industry in which the job is located.
-Company_Size: The size of the company (e.g., small, medium, large).
+Company_Size: The size of the company .
 Location: The geographic location of the job.
-AI_Adoption_Level: The level of AI adoption in the industry (e.g., high, medium, low).
+AI_Adoption_Level: The level of AI adoption in the industry .
 Automation_Risk: The risk of the job being automated.
 Required_Skills: The skills required for the job.
 Salary_USD: The salary offered for the role in USD.
